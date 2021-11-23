@@ -62,6 +62,7 @@ jobs:
       run: |
         git config --global user.name "WilliamOtieno"
         git config --global user.email "jimmywilliamotieno@gmail.com"
+        git config --global pull.rebase false
         git add .
         # "echo" returns true so the build succeeds, even if no changed files
         git commit -m 'Update generated files' || echo
