@@ -7,7 +7,7 @@ on:
   push:
     branches: [ master ]
   schedule:
-    - cron: "5 0 * * *"
+    - cron: "5 * * * *"
   workflow_dispatch:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in
@@ -60,8 +60,8 @@ jobs:
     # Commits all changed files to the repository
     - name: Commit to the repo
       run: |
-        git config --global user.name "jstrieb/github-stats"
-        git config --global user.email "github-stats[bot]@jstrieb.github.io"
+        git config --global user.name "WilliamOtieno"
+        git config --global user.email "jimmywilliamotieno@gmail.com"
         git add .
         # "echo" returns true so the build succeeds, even if no changed files
         git commit -m 'Update generated files' || echo
