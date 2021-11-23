@@ -65,4 +65,5 @@ jobs:
         git add .
         # "echo" returns true so the build succeeds, even if no changed files
         git commit -m 'Update generated files' || echo
+        git pull
         git push
